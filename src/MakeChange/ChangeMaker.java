@@ -11,13 +11,14 @@ public class ChangeMaker {
 			Scanner input=new Scanner(System.in);
 			System.out.println("Enter an amount between 1-99");
 			int payAmount=input.nextInt();
-			
+			//call returnChange method to print
 			returnChange(payAmount);
 
 		}
-	// method to calculate tip amount
+	// method to calculate change amount
 		public static void returnChange(int change) {
 			
+			//if statement to catch numbers below 0 and above 99
 			if(change>=0 && change<=99) {
 			int quaters=0;
 			int dimes=0;
